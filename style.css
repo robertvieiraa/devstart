@@ -3,8 +3,9 @@
 :root {
     --primaria: #704CE7;
     --background: #F9F7FD;
-    --bg-accented: #E4DFF6;
+    --bg-acentuado: #E4DFF6;
     --hover: #6643db;
+    --texto: #333;
 }
 
 * {
@@ -14,8 +15,8 @@
 }
 
 body {
-    background-color: #fafafa;
-    color: #333;
+    background-color: var(--background);
+    color: var(--texto);
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
@@ -23,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    max-width: 1400px;
+    max-width: 1300px;
     padding: 18px 0px;
 }
 
@@ -55,13 +56,9 @@ nav {
     background-color: var(--hover);
 }
 
-main {
-    background-color: var(--background);
-}
-
 section {
     padding: 100px 24px;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -77,14 +74,14 @@ section {
 }
 
 .chip {
-    background-color: var(--bg-accented);
+    background-color: var(--bg-acentuado);
     align-self: flex-start;
     padding: 8px 16px;
     border-radius: 24px;
 }
 
 p.section-label {
-    font: 700 0.9em 'Plus Jakarta Sans', 'Poppins', Arial, sans-serif;
+    font: 700 1em 'Plus Jakarta Sans', 'Poppins', Arial, sans-serif;
     color: var(--primaria);
     text-transform: uppercase;
 }
@@ -150,7 +147,7 @@ h3 {
 .botao-demo {
     position: relative;
     background-color: white;
-    color: #333;
+    color: var(--texto);
     text-decoration: none;
     box-shadow: 0px 2px 8px rgba(121, 121, 121, 0.2);
     padding: 12px 30px 12px 44px;
@@ -173,6 +170,13 @@ h3 {
 
 .botao-demo:hover {
     background-color: #fafafa;
+}
+
+.linha-horizontal {
+    width: 1200px;
+    height: 1px;
+    background-color: #0000000d;
+    margin: auto;
 }
 
 .section-header {
@@ -212,6 +216,7 @@ h3 {
 .container-depoimentos {
     display: flex;
     justify-content: space-evenly;
+    gap: 24px;
     margin-top: 32px;
 }
 
@@ -256,4 +261,97 @@ h3 {
     color: var(--primaria);
     font-size: .8em;
     font-weight: 500;
+}
+
+footer {
+    background-color: #222;
+    color: #fafafa;
+}
+
+.container-footer {
+    display: grid;
+    grid-template: 100% / 2fr repeat(3, 1fr);
+    max-width: 1300px;
+    margin: auto;
+    padding: 40px 0px;
+}
+
+.informacoes-devstart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 24px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 14px;
+}
+
+.footer-label {
+    font: 700 0.9em 'Plus Jakarta Sans', 'Poppins', Arial, sans-serif;
+    color: var(--primaria);
+    text-transform: uppercase;
+    margin-bottom: 12px
+}
+
+.coluna-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px;
+}
+
+.links-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.links-footer a {
+    text-decoration: none;
+    font-size: .9em;
+    color: #fafafa;
+}
+
+.links-footer a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    margin-top: 12px;
+}
+
+form > input[type=email] {
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px rgba(121, 121, 121, 0.15);
+}
+
+form > input[type=submit] {
+    display: none;
+}
+
+.enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaria);
+    border-radius: 6px;
+    width: 45px;
+}
+
+.copyright {
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+    border-top: 1px solid rgba(216, 216, 216, 0.2);
+    padding: 18px 24px;
+}
+
+.copyright p {
+    color: #d8d8d8;
+    font-size: .9em;
 }
