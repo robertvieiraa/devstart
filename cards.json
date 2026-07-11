@@ -1,0 +1,20 @@
+[
+  {
+    "conteudo": "O curso mudou completamente minha forma de aprender. As aulas são incríveis e os projetos me ajudaram muito a evoluir!",
+    "autor": "João Marcos",
+    "profissao": "Desenvolvedor Front-End",
+    "imagem": "imagens/joao-marcos.png"
+  },
+  {
+    "conteudo": "Didática excepcional! Mesmo sem experiência alguma, consegui aprender e hoje já me sinto preparada para o mercado.",
+    "autor": "Maria Eduarda",
+    "profissao": "Estudante de Programação",
+    "imagem": "imagens/maria-eduarda.jpg"
+  },
+  {
+    "conteudo": "Conteúdo atualizado, direto ao ponto e com muitos projetos práticos. Recomendo demais!",
+    "autor": "Carlos Henrique",
+    "profissao": "Desenvolvedor Full-Stack",
+    "imagem": "imagens/carlos-henrique.jpg"
+  }
+]
