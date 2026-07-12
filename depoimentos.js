@@ -1,9 +1,13 @@
 let depoimentos = []
 
 async function buscarDepoimentos() {
-    let response = await fetch('cards.json')
-    depoimentos = await response.json()
-    exibirDepoimentos(depoimentos)
+    try {
+        let response = await fetch('cards.json')
+        depoimentos = await response.json()
+        exibirDepoimentos(depoimentos)
+    } catch {
+        alert('Erro ao buscar e exibir depoimentos.')
+    }
 }
 
 document.addEventListener('DOMContentLoaded', buscarDepoimentos)
